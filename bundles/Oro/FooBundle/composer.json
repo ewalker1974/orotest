@@ -1,0 +1,33 @@
+{
+    "name": "oro/foo-bundle",
+    "type": "symfony-bundle",
+    "description": "A Symfony bundle for the Foo module.",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=8.4",
+        "ext-ctype": "*",
+        "ext-iconv": "*",
+        "symfony/console": "6.4.*",
+        "symfony/dotenv": "6.4.*",
+        "symfony/flex": "^2",
+        "symfony/framework-bundle": "6.4.*",
+        "symfony/runtime": "6.4.*",
+        "symfony/yaml": "6.4.*"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "Oro\\FooBundle\\": ""
+        }
+    },
+
+    "conflict": {
+        "symfony/symfony": "*"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.dev"
+        }
+    }
+}

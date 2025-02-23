@@ -1,0 +1,44 @@
+{
+    "name": "oro/bar-bundle",
+    "type": "symfony-bundle",
+    "description": "A Symfony bundle for the Bar module.",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=8.4",
+        "ext-ctype": "*",
+        "ext-iconv": "*",
+        "symfony/console": "6.4.*",
+        "symfony/dotenv": "6.4.*",
+        "symfony/flex": "^2",
+        "symfony/framework-bundle": "6.4.*",
+        "symfony/runtime": "6.4.*",
+        "symfony/yaml": "6.4.*",
+        "oro/chaincommand-bundle": "dev-main"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "Oro\\BarBundle\\": ""
+        }
+    },
+
+    "conflict": {
+        "symfony/symfony": "*"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../ChainCommandBundle",
+            "options": {
+                "symlink": false
+            }
+        }
+    ],
+
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.dev"
+        }
+    }
+}
